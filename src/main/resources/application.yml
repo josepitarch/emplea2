@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: beach-flag
+  datasource:
+    url: jdbc:postgresql://poorly-enjoyed-anemone.data-1.euc1.tembo.io:5432/postgres
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: emplea2
+        format_sql: true
+    show-sql: true
+server:
+  port: 8080
